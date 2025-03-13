@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
         health += deltaHealth;
     }
 
+    public int enemyCount;
+
 
     //add back in when have UI
     /* 
