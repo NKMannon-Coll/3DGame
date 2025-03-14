@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -13,16 +14,23 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private float waveIncreaseModifier;
 
+    private bool spawning = true;
+
+    private GameObject spawnLocations;
+    private GameObject enemies;
+
     private int waveNum = 0;
     //[SerializeField] private EnemyHolder enemyHolder;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawnPoints = new GameObject[gameObject.transform.childCount];
-        for (int i = 0; i < gameObject.transform.childCount; i++) 
+        spawnLocations = gameObject.transform.GetChild(0).gameObject;
+        enemies = gameObject.transform.GetChild(1).gameObject;
+        spawnPoints = new GameObject[spawnLocations.transform.childCount];
+        for (int i = 0; i < spawnLocations.transform.childCount; i++) 
         {
-            spawnPoints[i] = gameObject.transform.GetChild(i).gameObject;
+            spawnPoints[i] = spawnLocations.transform.GetChild(i).gameObject;
         }
 
         spawnSkeletons();
@@ -31,8 +39,9 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.enemyCount <= 0) 
+        if (enemies.transform.childCount <= 0 && !spawning) 
         {
+            Debug.Log("Why are you here");
             spawnSkeletons();
         }
     }
@@ -55,7 +64,7 @@ public class EnemySpawner : MonoBehaviour
         {
 
         }*/
-
+        spawning = true;
         int far = (int)(numFarSkeles * waveIncreaseModifier * waveNum);
         int close = (int)(numCloseSkeles * waveIncreaseModifier * waveNum);
 
@@ -69,15 +78,23 @@ public class EnemySpawner : MonoBehaviour
         }
 
         waveNum++;
+        spawning = false;
     }
 
     private void spawnSkeleton(GameObject skele) 
     {
         GameObject spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
         //GameObject go = Instantiate(skeleBoy, enemyHolder.transform);
-        GameObject go = Instantiate(skele);
+        GameObject go = Instantiate(skele, enemies.transform);
         //go.transform.SetParent(enemyHolder.transform);
-        go.transform.position = spawnPoint.transform.position;
+        NavMeshHit closestHit;
+        if (NavMesh.SamplePosition(spawnPoint.transform.position, out closestHit, 500, 1))
+        {
+            go.transform.position = closestHit.position;
+            go.AddComponent<NavMeshAgent>();
+            NavMeshAgent nm = go.GetComponent<NavMeshAgent>();
+            nm.baseOffset = 0.2f;
+        }
         go.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 }

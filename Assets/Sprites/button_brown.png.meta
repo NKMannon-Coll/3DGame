@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: afe7ea50887043d4a85fb764e1476988
+guid: 358c2f24e41d64045abaa03373fb531c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,8 +37,8 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -110,23 +110,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panel_brown_corners_a 1_0
+      name: button_brown_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 126
-        height: 126
+        width: 48
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 60, y: 60, z: 60, w: 60}
+      border: {x: 15, y: 5, z: 15, w: 5}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c1111fbc7dc1e14dae656d81038bab6
-      internalID: 355317009
+      spriteID: b4ab97592c4a59f4d8424950a0ba1990
+      internalID: -558781218
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1d1e068fa4d66894ab1bffbfe643acb3
+    spriteID: 389c8c3e423542741a087906d56f8ad7
     internalID: 0
     vertices: []
     indices: 
@@ -145,7 +145,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      panel_brown_corners_a 1_0: 355317009
+      button_brown_0: -558781218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
