@@ -20,6 +20,9 @@ public class EnemyControllerButFar : MonoBehaviour
     [SerializeField] private int stalkingDistance = 6;
 
     [SerializeField] private float distance = 0;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip shoot;
+    [SerializeField] private AudioClip die;
 
     private float hitDeadTime = 4f;
     private float timer = 0;
@@ -41,6 +44,7 @@ public class EnemyControllerButFar : MonoBehaviour
         enemyThrow = GetComponent<EnemyThrow>();
         navAgent.speed = walkingSpeed;
         GameManager.Instance.enemyCount += 1;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -127,6 +131,7 @@ public class EnemyControllerButFar : MonoBehaviour
         {
             GameManager.Instance.enemyCount -= 1;
             animator.SetBool("Dead", true);
+            audioSource.PlayOneShot(die, 0.3f);
             Destroy(gameObject, 3);
         }
     }
@@ -136,6 +141,7 @@ public class EnemyControllerButFar : MonoBehaviour
         //Ray ray = new Ray(transform.)
         Debug.Log("We are throwing");
         enemyThrow.Throw_Cannonball();
+        audioSource.PlayOneShot(shoot, 0.3f);
     }
 
     private void OnCollisionEnter(Collision collision)

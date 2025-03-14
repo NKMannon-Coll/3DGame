@@ -16,11 +16,13 @@ public class EnemyThrow : MonoBehaviour
     bool readyToThrow;
 
     private GameObject player;
+    AudioSource audioSource;
 
     private void Start()
     {
         readyToThrow = true;
         player = FindFirstObjectByType<PlayerMovement>().gameObject;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -31,6 +33,7 @@ public class EnemyThrow : MonoBehaviour
     public void Throw_Cannonball()
     {
         readyToThrow = false;
+        audioSource.Play();
 
         // instantiate object to throw
         GameObject projectile = Instantiate(objectToThrow);

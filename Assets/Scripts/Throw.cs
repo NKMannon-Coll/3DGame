@@ -19,9 +19,11 @@ public class Throw : MonoBehaviour
     public float throwUpwardForce;
 
     bool readyToThrow;
+    AudioSource audioSource;
 
     private void Start()
     {
+        audioSource = attackPoint.GetComponent<AudioSource>();
         readyToThrow = true;
     }
 
@@ -36,6 +38,8 @@ public class Throw : MonoBehaviour
     private void Throw_Cannonball()
     {
         readyToThrow = false;
+
+        audioSource.Play();
 
         // instantiate object to throw
         GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);

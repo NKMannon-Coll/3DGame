@@ -28,6 +28,9 @@ public class EnemyController : MonoBehaviour
     private bool stunned = false;
 
     private Ray hit;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip slash;
+    [SerializeField] private AudioClip die;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,6 +40,7 @@ public class EnemyController : MonoBehaviour
         animator = GetComponent<Animator>();
         navAgent.speed = walkingSpeed;
         GameManager.Instance.enemyCount += 1;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -112,6 +116,7 @@ public class EnemyController : MonoBehaviour
         {
             GameManager.Instance.enemyCount -= 1;
             animator.SetBool("Dead", true);
+            audioSource.PlayOneShot(die, 0.3f);
             Destroy(gameObject, 3);
         }
     }
@@ -136,6 +141,7 @@ public class EnemyController : MonoBehaviour
         {
             GameManager.Instance.changeHealth((int)-attackDamage);
         }
+        audioSource.PlayOneShot(slash, 0.3f);
     }
     
     private void OnCollisionEnter(Collision collision)
