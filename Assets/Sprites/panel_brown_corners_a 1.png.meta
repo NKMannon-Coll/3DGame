@@ -93,6 +93,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -101,12 +114,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 84
-        width: 42
-        height: 42
+        y: 0
+        width: 126
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 40, z: 40, w: 40}
       customData: 
       outline: []
       physicsShape: []
@@ -114,182 +127,6 @@ TextureImporter:
       bones: []
       spriteID: 1c1111fbc7dc1e14dae656d81038bab6
       internalID: 355317009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 84
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eef4b4056c1abb943ba29daac5039563
-      internalID: -2106676453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_2
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 84
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0485053ecdc2b4468a5d17211a1ec36
-      internalID: 566088323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 42
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 957095fd2870bff4eac157419c9eda89
-      internalID: 28643128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_4
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 42
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e8459379ca00b5489eb2276e8b607c0
-      internalID: 418006866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_5
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 42
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50dc637d277ca8f4fa05509632ed2725
-      internalID: 1956255995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99d4fdfd56f330c4e8bbc119b9aed133
-      internalID: 1460505293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_7
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5fba9561e9cc6742a8742d8da930a35
-      internalID: 1239322329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panel_brown_corners_a 1_8
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 0
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6a12232d9206254c85267be233f65b7
-      internalID: -459944097
       vertices: []
       indices: 
       edges: []
@@ -309,14 +146,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       panel_brown_corners_a 1_0: 355317009
-      panel_brown_corners_a 1_1: -2106676453
-      panel_brown_corners_a 1_2: 566088323
-      panel_brown_corners_a 1_3: 28643128
-      panel_brown_corners_a 1_4: 418006866
-      panel_brown_corners_a 1_5: 1956255995
-      panel_brown_corners_a 1_6: 1460505293
-      panel_brown_corners_a 1_7: 1239322329
-      panel_brown_corners_a 1_8: -459944097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

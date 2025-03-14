@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 17b7051ab434f0c4fb52d7e22cfa4c6f
+guid: 358c2f24e41d64045abaa03373fb531c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -110,45 +110,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet-double_0
+      name: button_brown_0
       rect:
         serializedVersion: 2
-        x: 480
+        x: 0
         y: 0
-        width: 96
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c46208d1856614743b3d32cc2b134bc1
-      internalID: 1147330921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet-double_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 207
-        width: 128
-        height: 129
+        width: 48
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 5, z: 5, w: 5}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391f65c3c4ccf3e40bdc23180273a6cd
-      internalID: -1380467293
+      spriteID: ac65f273714d5ab43bffa2dd8783969a
+      internalID: -1298886526
       vertices: []
       indices: 
       edges: []
@@ -157,7 +135,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4e202a91ba323e54791959b0a956ed6e
+    spriteID: 867232104fc95c14f85ab127bfdacf81
     internalID: 0
     vertices: []
     indices: 
@@ -167,8 +145,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spritesheet-double_0: 1147330921
-      spritesheet-double_1: -1380467293
+      button_brown_0: -1298886526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,17 +20,51 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] private int health = 100;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI healthText;
 
     public void changeHealth(int deltaHealth) 
     {
         health += deltaHealth;
+        healthText.text = "Health: " + health;
     }
 
     public int enemyCount;
 
+    public void changeScore(int deltaScore) 
+    {
+        score += deltaScore;
+        scoreText.text = "Score: " + score;
+    }
+    public int score;
 
+    [SerializeField] GameObject UI;
+
+    public void setUI(bool isOn) 
+    {
+        UI.SetActive(isOn);
+    }
+    public void mainMenu() 
+    {
+        Initiate.Fade("MainMenu", Color.black, 1);
+    }
+
+    public void credits() 
+    {
+        Initiate.Fade("Credits", Color.black, 1);
+    }
+
+    public void controls() 
+    {
+        Initiate.Fade("Controls", Color.black, 1);
+    }
+
+    public void startGame() 
+    {
+        Initiate.Fade("IanScene", Color.black, 1);
+    }
     //add back in when have UI
-    /* 
+    
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] GameObject dialoguePanel;
@@ -116,5 +150,5 @@ public class GameManager : MonoBehaviour
                 yield return null;
             }
         }
-    }*/
+    }
 }
