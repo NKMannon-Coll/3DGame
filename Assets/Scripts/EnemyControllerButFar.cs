@@ -131,6 +131,7 @@ public class EnemyControllerButFar : MonoBehaviour
         {
             GameManager.Instance.enemyCount -= 1;
             animator.SetBool("Dead", true);
+            GameManager.Instance.score = 0;
             audioSource.PlayOneShot(die, 0.3f);
             Destroy(gameObject, 3);
         }
