@@ -1,7 +1,7 @@
-#Name: 
+# Name: 
 Fool's Gold
 
-#Intent: 
+# Intent: 
 The intent of our game was to create a priate cannonball throwing simulator with enemies and wave mechanics. 
 
 #Narrative Structure:
