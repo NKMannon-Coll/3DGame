@@ -5,6 +5,8 @@ public class SceneController : MonoBehaviour
 
     [SerializeField] bool uiOn = false;
     [SerializeField] bool cursorOff = false;
+    [SerializeField] bool startingDialogueNeeded = false;
+    [SerializeField] Dialogue startingDialogue;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,8 +20,14 @@ public class SceneController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
         }
+        if (startingDialogueNeeded) 
+        {
+            GameManager.Instance.StartDialogue(startingDialogue.dialogue, 0, "Random Voice.....");
+        }
         
     }
+
+
 
     // Update is called once per frame
     void Update()
