@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CannonDialogue
   m_EditorClassIdentifier: 
   dialogue:
-  - Looks like the cannon is broken but theres still a bunch of cannon balls laying
-    around.........
-  - I bet you can chunk them hard enough to do some damage why not try.
+  - Blow me down! There be no gunpowder around, but there do be many a cannonball
+    to spare...
+  - 'I sense a great strength in ye. So why not just chuck the cannonballs with ye
+    mighty arms? Give it a try, and send those skeletons flying! '

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: startingDialogue
   m_EditorClassIdentifier: 
   dialogue:
-  - You stole their treasure and your ship is stuck you must defend yourself from
-    the skeletons.
-  - Maybe that cannon next to you can help?
+  - Seems like ye plundered the wrong island, bucko. Yer ship be stuck, so now ye
+    must face the horde of the undead!
+  - Turn and ready the cannon behind you. Perhaps ye can use it to defend yerself.
