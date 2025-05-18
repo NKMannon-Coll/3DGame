@@ -6,6 +6,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
+    [SerializeField] private int health = 100;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI healthText;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip hit;
+    [SerializeField] private AudioClip fallen;
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -17,19 +25,21 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
         DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
     }
-
-    [SerializeField] private int health = 100;
-    [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private TextMeshProUGUI healthText;
 
     public void changeHealth(int deltaHealth)
     {
         health += deltaHealth;
         healthText.text = "Health: " + health;
-        if (health <= 0) 
+        if (health <= 0)
         {
             mainMenu();
+            audioSource.PlayOneShot(fallen, 0.3f);
+        }
+        else
+        {
+            audioSource.PlayOneShot(hit, 0.3f);
         }
     }
 
