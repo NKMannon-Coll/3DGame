@@ -676,8 +676,8 @@ MonoBehaviour:
     \r\n061013_felix_waves_10m_ecm957_tr003.mp3 by eminine https://freesound.org/people/ermine/sounds/23723/
     \r\nBones 2 by AntumDeluge https://freesound.org/people/AntumDeluge/sounds/188034/
     \r\nBones.wav by CaptainYulef https://freesound.org/people/CaptainYulef/sounds/641236/
-    \r\nCannonball.mp3 by Kastenfrosch https://freesound.org/people/Kastenfrosch/sounds/162455/
-    \n\n\rFont - Treasure Map by JoannaVu\nhttps://www.fontspace.com/treasure-map-font-f40513"
+    \r\nCannonball.mp3 by Kastenfrosch https://freesound.org/people/Kastenfrosch/sounds/162455/\nPlayer
+    Hit & Death Sounds by Jake Nurkin \n\n\rFont - Treasure Map by JoannaVu\nhttps://www.fontspace.com/treasure-map-font-f40513"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c494c75312bfa7b4c8788d3ab0dafc5f, type: 2}
   m_sharedMaterial: {fileID: -6283851196436697011, guid: c494c75312bfa7b4c8788d3ab0dafc5f, type: 2}
