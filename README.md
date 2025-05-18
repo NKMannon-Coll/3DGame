@@ -45,3 +45,5 @@ Cannonball.mp3 by Kastenfrosch https://freesound.org/people/Kastenfrosch/sounds/
 I worked on the Enemies. I implemented their AI and navigation behaviour as well as animating them. I also made the menus and connected all the scenes. - Niko
 
 I worked on the player movement and throwing mechanic. I also built the map, added the appropriate collisions, and added the skybox. - Ian
+
+I worked on UI and gathered and created SFX. - Jake
