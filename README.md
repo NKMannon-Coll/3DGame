@@ -46,4 +46,4 @@ I worked on the Enemies. I implemented their AI and navigation behaviour as well
 
 I worked on the player movement and throwing mechanic. I also built the map, added the appropriate collisions, and added the skybox. - Ian
 
-I worked on UI and gathered and created SFX. - Jake
+I worked on the UI. I neatened out and fixed issues with the main menu, edited dialogue to add to aesthetics, and gathered UI elements and fonts. I also collected sound effects and created and implemented some made by yours truly. - Jake
